@@ -3,11 +3,14 @@
 
 #include "Gravity.h"
 
-class Gravity
+// Constructor for the Gravity Handler
+Gravity::Gravity()
 {
-    // Constructor for the Gravity Handler
-    Gravity::Gravity()
-    {
-        //
-    }
-};
+    //
+}
+
+
+//Accessors and mutators
+
+void Gravity::setGravityModifier(double input) { gravityModifier = input; }
+double Gravity::getGravityModifier() { return gravityModifier; }
