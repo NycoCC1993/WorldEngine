@@ -14,7 +14,8 @@ void Gravity::actGravity(PhysicsObject* paPhysicsObject)
     if (paPhysicsObject->getIs3dObject())
     {
         // Perform operations on Z axis for 3D objects
-    } else
+    } 
+    else
     {
         // Perform operations on Y axis for 2D objects
     }
@@ -22,5 +23,5 @@ void Gravity::actGravity(PhysicsObject* paPhysicsObject)
 
 //Accessors and mutators
 
-void Gravity::setGravityModifier(double input) { gravityModifier = input; }
-double Gravity::getGravityModifier() { return gravityModifier; }
+void Gravity::setGravityModifier(double input) { this->gravityModifier = input; }
+double Gravity::getGravityModifier() { return this->gravityModifier; }
