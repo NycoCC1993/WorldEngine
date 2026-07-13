@@ -12,7 +12,7 @@ class PhysicsObject
         void updateLocation(std::vector<double>);
         void updateVelocity(std::vector<double>);
         void updateAcceleration(std::vector<double>);
-        
+
         bool getIs3dObject();
 
     private:
@@ -30,6 +30,9 @@ class PhysicsObject
         double xAcc;
         double yAcc;
         double zAcc;
+
+        // Mass:
+        double mass;
 
         // Type
         bool is3dObject;

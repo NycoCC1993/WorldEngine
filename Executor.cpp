@@ -5,7 +5,7 @@
 #include <iostream>
 
 // Project includes
-#include "Regulators\Gravity.h"
+#include "Regulators\EntityController.h"
 
 int main() {
     std::cout << "NYCO Computing Company \"worldEngine\" under the creative commons license, 2026" << std::endl;

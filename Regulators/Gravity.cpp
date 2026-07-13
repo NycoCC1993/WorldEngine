@@ -9,6 +9,7 @@ Gravity::Gravity()
     //
 }
 
+// Modify an object according to its gravity
 void Gravity::actGravity(PhysicsObject* paPhysicsObject)
 {
     if (paPhysicsObject->getIs3dObject())
