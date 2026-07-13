@@ -9,6 +9,16 @@ Gravity::Gravity()
     //
 }
 
+void Gravity::actGravity(PhysicsObject* paPhysicsObject)
+{
+    if (paPhysicsObject->getIs3dObject())
+    {
+        // Perform operations on Z axis for 3D objects
+    } else
+    {
+        // Perform operations on Y axis for 2D objects
+    }
+}
 
 //Accessors and mutators
 
