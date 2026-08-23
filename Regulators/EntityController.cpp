@@ -7,14 +7,7 @@ bool EntityController::runPhysics()
 {
     for (PhysicsObject* each : this->priorityObjects)
     {
-        if (each->getIs3dObject())
-        {
-            // perform any 3D-specific calculations
-        }
-        else
-        {
-            // perform any 2D-specific calculations
-        }
+        // perform any 2D-specific calculations
 
         // generic physics calculations
     }

@@ -13,29 +13,21 @@ class PhysicsObject
         void updateVelocity(std::vector<double>);
         void updateAcceleration(std::vector<double>);
 
-        bool getIs3dObject();
-
     private:
         // Position:
         double xPos;
         double yPos;
-        double zPos;
 
         // Velocity:
         double xVel;
         double yVel;
-        double zVel;
 
         // Acceleration:
         double xAcc;
         double yAcc;
-        double zAcc;
 
         // Mass:
         double mass;
-
-        // Type
-        bool is3dObject;
 };
 
 #endif // PHYSICSOBJECT_H
