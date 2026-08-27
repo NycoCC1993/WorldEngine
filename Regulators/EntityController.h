@@ -7,7 +7,7 @@
 class EntityController
 {
     public:
-        std::vector<PhysicsObject*> priorityObjects; // objects that need to be executed first
+        std::vector<PhysicsObject*> priorityObjects; // objects that need to be executed first - surfaces & such
         std::vector<PhysicsObject*> objects;
         bool runPhysics();
     private:

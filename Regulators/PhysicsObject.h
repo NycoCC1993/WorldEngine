@@ -2,16 +2,24 @@
 #define PHYSICSOBJECT_H
 
 #include <vector>
+#include ".\Utils.h"
 
 class PhysicsObject
 {
     public:
+        PhysicsObject(double, double, double);
+
         std::vector<double> getMyLocation();
         std::vector<double> getMyVelocity();
         std::vector<double> getMyAcceleration();
-        void updateLocation(std::vector<double>);
-        void updateVelocity(std::vector<double>);
-        void updateAcceleration(std::vector<double>);
+        double getMass();
+        
+        void updateLocation(double, double);
+        void updateVelocity(double, double);
+        void updateAcceleration(double, double);
+        void updateMass(double);
+
+        bool isOnGround();
 
     private:
         // Position:

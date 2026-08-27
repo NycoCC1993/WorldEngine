@@ -7,8 +7,8 @@ bool EntityController::runPhysics()
 {
     for (PhysicsObject* each : this->priorityObjects)
     {
-        // perform any 2D-specific calculations
-
         // generic physics calculations
+
+        universalGravity.actGravity(each);
     }
 }
